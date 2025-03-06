@@ -1,4 +1,4 @@
-use world;
+use proyecto;
 /*
 	Calculador de ahorro mensual. 
 */
