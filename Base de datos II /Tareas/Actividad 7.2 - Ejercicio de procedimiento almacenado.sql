@@ -24,7 +24,7 @@ values
 
 #crear tabla transacciones
 create table transacciones (
-	id_transaccion int auto_increment key,
+	id_transaccion int auto_increment primary key,
 	num_cuenta INT,
     fecha date,
     credito decimal (10, 2),
