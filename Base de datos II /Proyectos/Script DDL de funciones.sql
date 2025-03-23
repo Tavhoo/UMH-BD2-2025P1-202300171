@@ -1,3 +1,6 @@
+#activar base de datos
+use proyecto2;
+
 # ------------------ Función Total a pagar ----------------------------------
 
 DELIMITER //
