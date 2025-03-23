@@ -16,7 +16,7 @@ END // DELIMITER ;
 
 # Llamada a la función para calcular el total a pagar
 # Orden para ingresar los parametros (p_precio, p_numNoches) 
-SELECT fn_get_total(142, 3) AS Total;
+SELECT proyecto2.fn_get_total(142, 3) AS Total;
 
 # ---------------------- Función Cantidad de Reservaciones -------------------
 
@@ -38,7 +38,7 @@ END // DELIMITER ;
 
 # Llamada a la función para obtener la cantidad de reservaciones de un cliente
 # Orden para ingresar los parametros (p_id_cliente)
-SELECT fn_get_reservaciones(1) AS Reservaciones;
+SELECT proyecto2.fn_get_reservaciones(1) AS Reservaciones;
 
 # ---------------------- Función Confirmación de Reservaciones -------------------
 
@@ -77,4 +77,4 @@ END // DELIMITER ;
 
 # Llamada a la función para obtener la confirmación de la reserva
 # Orden para ingresar los parametros (id_cliente, id_hotel)
-SELECT fn_confirmacion(1, 1) AS Confirmacion;
+SELECT proyecto2.fn_confirmacion(1, 1) AS Confirmacion;
