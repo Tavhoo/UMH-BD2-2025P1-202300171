@@ -38,7 +38,7 @@ p_numTarjeta, p_fechaVencimiento, p_nombreTitular); */
 CALL proyecto2.sp_tarjeta_upd(1, 1, 1, '8888-8888-8888-8888', '2025/02/24', 'Carlos Gonzales');
 
 # Consulta para verificar la actualización de la tarjeta
-SELECT * FROM tarjeta;
+SELECT * FROM proyecto2.tarjeta;
 
 # ----------------- Actualizar tabla de habitacion --------------------------
 
@@ -74,7 +74,7 @@ END // DELIMITER ;
 /* Llamada al procedimiento para actualizar la habitación.
 Parametros (p_id_habitacion, p_precio, p_id_hotel, p_id_tipoHabitacion, p_id_acomodacion); */
 
-CALL sp_habitacion_upd(
+CALL proyecto2.sp_habitacion_upd(
 	1, 
     190.00, 
     3, 
@@ -83,7 +83,7 @@ CALL sp_habitacion_upd(
     );
 
 # Consulta para verificar la actualización de la habitación
-SELECT * FROM habitacion;
+SELECT * FROM proyecto2.habitacion;
 
 # ------------------------- Actualizar tabla de cliente -----------------------------------------
 
@@ -152,4 +152,4 @@ CALL proyecto2.sp_cliente_upd(
     );
 
 # Consulta para verificar la actualización del cliente
-SELECT * FROM cliente;
+SELECT * FROM proyecto2.cliente;
